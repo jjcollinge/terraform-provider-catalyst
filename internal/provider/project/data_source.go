@@ -44,16 +44,14 @@ func (d *projectDataSource) Schema(ctx context.Context,
 			},
 			"region": schema.StringAttribute{
 				MarkdownDescription: "Region",
-				Optional:            true,
+				Computed:            true,
 			},
 			"grpc_endpoint": schema.StringAttribute{
 				MarkdownDescription: "gRPC endpoint",
-				Optional:            true,
 				Computed:            true,
 			},
 			"http_endpoint": schema.StringAttribute{
 				MarkdownDescription: "HTTP endpoint",
-				Optional:            true,
 				Computed:            true,
 			},
 			"default_agent_infrastructure_enabled": schema.BoolAttribute{
